@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>IT用語ノート</title>
+</head>
+<body>
+    <h1>登録したい用語を入力</h1>
+    <form method="POST" action="check.php">
+        <div>
+            単語名<br>
+            <input type="text" name="wordname">
+        </div>
+        <div>
+            意味<br>
+            <input type="text" name="mean">
+        </div>
+        <div>
+            一言で表すと<br>
+            <textarea name="about"></textarea>
+        </div>
+        <input type="submit" value="送信">
+    </form>
+    <!-- <form method="POST" action="thanks.php"></form> -->
+    <form action="search.php" method="get"></form>
+            <p>検索したい単語を入力してください。</p>
+            <input type="text" name="wordname">
+            <input type="submit" value="検索">
+        </form>
+</body>
+</html>
