@@ -40,9 +40,11 @@
 <head>
     <title>入力内容確認</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap_css/costome.css">
 </head>
 <body>
-    <h1>入力内容確認</h1>
+    <h1 class="p-3 mb-2 bg-gradient-light text-dark">入力内容確認</h1>
     <p><?php echo $wordname_result; ?></p>
     <p><?php echo $mean_result; ?></p>
     <p><?php echo $about_result; ?></p>
@@ -50,9 +52,9 @@
     <input type="hidden" name="wordname" value="<?php echo $wordname; ?>">
     <input type="hidden" name="mean" value="<?php echo $mean; ?>">
     <input type="hidden" name="about" value="<?php echo $about; ?>">
-      <input type="button" value="戻る" onclick="history.back()">
+      <input type="button" value="戻る" class="btn btn-outline-info" onclick="history.back()">
       <?php if ($wordname != '' && $mean != '' && $about != ''):?>
-        <input type="submit" value="OK">
+        <input type="submit" value="OK" class="btn btn-outline-info">
       <?php endif; ?>
     </form>
 </body>

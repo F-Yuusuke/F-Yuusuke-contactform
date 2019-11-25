@@ -3,29 +3,34 @@
 <head>
     <meta charset="utf-8">
     <title>IT用語ノート</title>
+
+    <link rel="stylesheet" href="bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap_css/costome.css">
 </head>
 <body>
-    <h1>登録したい用語を入力</h1>
-    <form method="POST" action="check.php">
+    <h1 class="p-3 mb-2 bg-gradient-light text-dark">登録したい用語を入力</h1>
+    <form method="POST" action="check.php" class="form-inline">
         <div>
             単語名<br>
-            <input type="text" name="wordname">
+            <input type="text" name="wordname" class="border border-info">
         </div>
         <div>
             意味<br>
-            <input type="text" name="mean">
+            <input type="text" name="mean" class="border border-info">
         </div>
         <div>
             一言で表すと<br>
-            <textarea name="about"></textarea>
+            <textarea name="about" class="border border-info"></textarea>
         </div>
-        <input type="submit" value="送信">
+        <input type="submit" value="送信" class="btn btn-outline-info">
     </form>
     <!-- <form method="POST" action="thanks.php"></form> -->
-    <form action="search.php" method="get"></form>
-            <p>検索したい単語を入力してください。</p>
-            <input type="text" name="wordname">
-            <input type="submit" value="検索">
-        </form>
+    <h1 class="p-3 mb-2 bg-gradient-light text-dark">検索したい用語がありますか？</h1>
+    <form method="POST" action="search.php">
+      <input type="submit" value="検索ページへ移動" class="btn btn-outline-info">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap_js/bootstrap.min.js"></script>
 </body>
 </html>

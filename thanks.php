@@ -19,7 +19,7 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <h1>ご協力ありがとうございました！</h1>
+    <h1 class="p-3 mb-2 bg-gradient-light text-dark">ご協力ありがとうございました！</h1>
     <p><?php echo $wordname; ?></p>
     <p><?php echo $mean; ?></p>
     <p><?php echo $about; ?></p>
